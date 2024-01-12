@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared styles */
 * {
     margin: 0;
     padding: 0;
     font-family: Work Sans;
 }
+.btn-primary{
+background-color: #FF900E;
+border-radius: 8px;
+padding: 20px 25px;
+color:#FFF ;
+font-size: 20px;
+font-weight: 600px;
+cursor: pointer;
+border: none;
+
+}
+/* header styles */
 
 header {
     background-color: rgba(255, 144, 14, 0.10);
@@ -60,4 +73,30 @@ nav li a {
     font-size: 16px;
     line-height: 26px;
 
+}
+.banner img{
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+/* responsive media  */
+/* mobile device */
+@media  screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+       flex-direction: column; 
+    }
+}
+/* tablet or medium device */
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding: 50px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
 }
