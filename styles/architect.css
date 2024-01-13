@@ -157,15 +157,27 @@ E
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
 }
+.footer-img img{
+    height: 90px;
+    margin-left: 50px;
+}
 .ten-years-budge{
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
     width: 320px;
     padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
 }
 .ten-years-budge h2{
     font-size: 4rem;
+    margin: 0;
+}
+.ten-years-budge p{
+    font-size: 1.5rem;
 }
 
 /* facts section */
@@ -244,15 +256,24 @@ footer {
 
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
     .footer-img {
         flex-direction: column;
     }
+       .footer-img img{
+        width: 100%;
+        margin-left: 0;
 
+       }
     .teams-img-container {
         grid-template-columns: 1fr;
     }
+    .ten-years-budge{
+        position: static;
+        max-width: 300px;
 
+    }
     .teams-content-text, .facts-card-container {
         padding-right: 70px;
         padding-left: 70px;
@@ -271,7 +292,9 @@ footer {
     }
 
     nav,
-    .teams-container {
+    .features,
+    .teams-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
